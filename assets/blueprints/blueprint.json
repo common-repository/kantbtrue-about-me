@@ -1,0 +1,26 @@
+{
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "landingPage": "/wp-admin/widgets.php",
+    "preferredVersions": {
+        "php": "8.0",
+        "wp": "6.0"
+    },
+    "phpExtensionBundles": [
+        "kitchen-sink"
+    ],
+    "steps": [
+        {
+            "step": "login"
+        },
+        {
+            "step": "installTheme",
+            "themeZipFile": {
+                "resource": "wordpress.org/themes",
+                "slug": "twentyseventeen"
+            },
+            "options": {
+                "activate": true
+            }
+        }
+    ]
+}
